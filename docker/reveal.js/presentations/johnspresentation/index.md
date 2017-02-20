@@ -1,7 +1,7 @@
 <section data-state="no-title-footer">
 ## Docker  
 Build, run, ship,  any app,  anywhere. 
-![docker-logo](https://raw.githubusercontent.com/Kawohl/presentations/master/docker/reveal.js/presentations/johnspresentation/rsz_docker-logo.png)
+![docker-logo](https://raw.githubusercontent.com/Kawohl/presentations/master/docker/reveal.js/presentations/johnspresentation/rsz_1rsz_docker-logo.png)
 ---
 
 ## Überblick
