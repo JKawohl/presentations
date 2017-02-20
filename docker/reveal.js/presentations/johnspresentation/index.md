@@ -1,11 +1,7 @@
 <section data-state="no-title-footer">
-
 # Docker  
 Build, run, ship,  any app,  anywhere. 
-
-
-by Jonathan Kawohl
-
+![docker-logo](https://raw.githubusercontent.com/Kawohl/presentations/master/docker/reveal.js/presentations/johnspresentation/docker-logo.png)
 ---
 
 ## Überblick
@@ -33,11 +29,12 @@ by Jonathan Kawohl
 ![container-vm-comparison](https://cloud.githubusercontent.com/assets/12275313/23125280/3fcb2ab0-f771-11e6-9d13-e2dd6fb55e0f.png)
 ---
 
-## Unordered Lists
+## Vorteile gegenüber VM's 
+* Kein Overhead gleicher Kernel für jeden service
+* Portabel, läuft auf jedem Server der Docker unterstützt (Windows ab Server 2016)
+* Keine Abhängigkeiten vom Hypervisor. Jeder Container läuft überall.
+* Weniger Maintenance Aufwand da das Kernelupdate des Hosts alle Systeme updatet.
 
-* bla
-* blubb <!-- .element: class="fragment" data-fragment-index="2" -->
-* bla blubb <!-- .element: class="fragment" data-fragment-index="3" -->
 
 ---
 
