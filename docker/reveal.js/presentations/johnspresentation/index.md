@@ -1,7 +1,7 @@
 <section data-state="no-title-footer">
-# Docker  
+## Docker  
 Build, run, ship,  any app,  anywhere. 
-![docker-logo](https://raw.githubusercontent.com/Kawohl/presentations/master/docker/reveal.js/presentations/johnspresentation/docker-logo.png)
+![docker-logo](https://raw.githubusercontent.com/Kawohl/presentations/master/docker/reveal.js/presentations/johnspresentation/rsz_docker-logo.png)
 ---
 
 ## Überblick
@@ -28,14 +28,12 @@ Build, run, ship,  any app,  anywhere.
 ## Linux Container im Vergleich zu Virtuellen Maschinen 
 ![container-vm-comparison](https://cloud.githubusercontent.com/assets/12275313/23125280/3fcb2ab0-f771-11e6-9d13-e2dd6fb55e0f.png)
 ---
-
-## Vorteile gegenüber VM's 
-* Kein Overhead gleicher Kernel für jeden service
-* Portabel, läuft auf jedem Server der Docker unterstützt (Windows ab Server 2016)
-* Keine Abhängigkeiten vom Hypervisor. Jeder Container läuft überall.
-* Weniger Maintenance Aufwand da das Kernelupdate des Hosts alle Systeme updatet.
-
-
+## Werkzeug der Zukunft?
+* Portabel
+* Wenig Overhead
+* Voll automatisierbar
+* Breites einsatzgebiet
+* 
 ---
 
 ## Ordered List
