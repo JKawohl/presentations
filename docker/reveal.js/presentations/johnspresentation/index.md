@@ -30,11 +30,7 @@ by Jonathan Kawohl
 ---
 
 ## Linux Container im Vergleich zu Virtuellen Maschinen 
-
-
-
-Note: Here you can see also some notes.
-
+![container-vm-comparison](https://cloud.githubusercontent.com/assets/12275313/23125280/3fcb2ab0-f771-11e6-9d13-e2dd6fb55e0f.png)
 ---
 
 ## Unordered Lists
