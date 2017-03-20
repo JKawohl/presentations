@@ -15,9 +15,8 @@ Build, run, ship,  any app,  anywhere. ![docker-logo](https://raw.githubusercont
 ## Linux Container 
 
 * Virtualisierung mit einem Kernel
-* Trennung der Prozesse durch Kernel-Namensräume (Namespaces) 
-* Trotz Nutzung des Host-Kernels, komplette Trennung möglich (außerhalb des Namespaces, kein Mount, etc.)
-* Gemeinsame Nutzung der Ressourcen (RAM, CPU) aber Verwaltung durch C-Groups.
+* Prozesse durch Namespaces getrennt
+* Komplette isolation vom Host möglich
 * Beispiele für Linux Container: docker, LXC, rkt 
 ---
 
@@ -31,17 +30,16 @@ Verwaltung und Überwachung von Ressourcen:
 * Netzwerk
 * Device Node: Access Control
 ---
+## Namespace 
 
-## Namespace
-Verschafft jedem Prozess einen eigenen Blick auf das System
-Während die **Cgroup** verwaltet, **wieviel** der container vom System benutzen kann, verwaltet der **Namespace** **__was__** der Prozess vom System sehen kann.
+
 
 **Beispiele:**
-* pid 
+* Verwaltung der Sichtbarkeit von Prozessen:
+* pid
 * net
 * mnt
-* user 
-
+* user                     
 ---
 
 ## Linux Container im Vergleich zu Virtuellen Maschinen 
@@ -51,16 +49,15 @@ Während die **Cgroup** verwaltet, **wieviel** der container vom System benutzen
 ## Werkzeug der Zukunft?
 * Portabel
 * Wenig Overhead
-* Voll automatisierbar
-* Breites einsatzgebiet
-* Orchestrierungs Tools: Kubernetes, Swarm, Compose, 
+* Bereits integriert in ansible, salt-stack und anderen orchestrierungssuiten 
 ---
 
 ## Warum Docker
 * Industriestandard 
 * Fertige container auf dockerhub
 * Sehr einfaches interface design
-* Orchestrierungs Tools: Kubernetes, Swarm, Compose
+* Orchestrierungs Tools: Kubernetes, Swarm, docker-compose
+* integriert in Google Cloud Platform, Amazon Web Services, azure container-services u.v.m. 
 ---
 
 ## Docker in meinem Arbeitsalltag
@@ -93,8 +90,9 @@ docker pull/run/build/compose/........
 ---
 
 ##Nützliches
-Diese Präsentation wurde mithilfe von html in einem docker-container erstellt.
- 
+Diese Präsentation wurde mithilfe von HTML5 in einem docker-container erstellt.
+
 * https://github.com/Kawohl/presentations
 * https://www.docker.com/
-* 
+* https://traefik.io/
+* https://kubernetes.io/

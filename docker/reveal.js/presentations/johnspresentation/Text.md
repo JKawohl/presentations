@@ -7,5 +7,8 @@ Während die Kernelnamensräume die Prozesse von anderen abschotten (Prozesse au
 
 Ab Kernelversion 3.12 können Kernel-Namespaces[1] für ipc, uts, mount, pid, network und user verwendet werden. Damit besteht ab LXC-Version 1.0 die Möglichkeit, einen Container unter einer anderen UID als der von root zu starten. Damit sind viele Sicherheitsprobleme behoben, insbesondere kann vom Container aus das Hostsystem nicht mehr verändert werden, wie zum Beispiel über das Schreiben in die Datei /proc/sysrq-trigger.
 
+Ausserdem ist es mittlerweile möglich fremde Kernels zu benutzen also auch komplette Betriebssysteme
+
+
 
 
