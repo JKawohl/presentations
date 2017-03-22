@@ -9,6 +9,8 @@ Build, run, ship,  any app,  anywhere. ![docker-logo](https://raw.githubusercont
 
 * Linux Container im Vergleich zu VM´s
 
+* Docker vs. LXC 
+
 * Anwendungsszenarien 
 
 * Die Zukunft? 
@@ -40,6 +42,7 @@ Verwaltung und Überwachung von Ressourcen:
 
 * I/O Festplatte 
 ---
+
 ## Namespace 
 
 **Beispiele:**
@@ -55,7 +58,7 @@ Verwaltung und Überwachung von Ressourcen:
 * user                     
 ---
 
-## Linux Container im Vergleich zu Virtuellen Maschinen 
+## Docker Container im Vergleich zu Virtuellen Maschinen 
 ![container-vm-comparison](https://cloud.githubusercontent.com/assets/12275313/23125280/3fcb2ab0-f771-11e6-9d13-e2dd6fb55e0f.png)
 ---
 
@@ -63,32 +66,39 @@ Verwaltung und Überwachung von Ressourcen:
 
 * Effiziente Ressourcen Nutzung
 
-* Schnell verfügbar (dazu später mehr....)
+* Schnell verfügbar 
 
 * Prozessisolierung
 
 ---
 
 ## Warum Docker
+* open Source
+
+* Sehr einfaches interface design  
+
+* Erweitert Linux Container u.a. um Portabilität
 
 * Industriestandard 
 
-* Fertige container auf dockerhub
-
-* Sehr einfaches interface design
-
-* Orchestrierungs Tools: Kubernetes, Swarm, docker-compose
+* Vielzahl an tools und implementierungen 
 
 * integriert in Google Cloud Platform, Amazon Web Services, azure container-services u.v.m. 
+
+
 ---
 
-## Unvollständiger Überblick über das docker Ökosystem 
-
+#### docker Ökosystem 
+![overview](https://raw.githubusercontent.com/Kawohl/presentations/20b535b991dc08c91a03c9b5bed33b43d3ecd4be/docker/reveal.js/presentations/johnspresentation/dockerUsers.png)
 
 ---
 
 
 ## Docker in meinem Arbeitsalltag
+* pakete testen: z.b. : 
+```
+docker run -ti centos:7
+```
 
 * owncloud Test-Instanz hochfahren: 
 ```
@@ -97,23 +107,34 @@ cd server/
 docker-compose up 
 ```
 
-* pakete testen: z.b. : 
+* container image von Dockerhub ziehen: 
 ```
-docker run -ti ubuntu:16.04
+docker pull ubuntu:16.04
 ```
-* testsysteme aufsetzen (andere produkte testen ...)
-```
-docker pull/run/build/compose/........
-```
+
+
+---
+
+
+
+## Docker 
+
+* Entwicklungsumgebung 
+* Deployment on Demand: Lastpitzen abfangen 
+* Effektivere Nutzung von Ressourcen
+* 
 
 ---
 
 ## Zusammenfassung
 
 * Portabel: Jede app läuft auf jedem Docker-Host
+
+* "wfm": "Bei mir läuft das aber" ist kein Problem mehr.
+
 * Datenpersistenz durch mountpoints auf dem Dateisystem
-* Keine zerschossenen Betriebssysteme mehr. Image neu bauen reicht. 
-* Kernel-update des Hostsystems aktualisiert alle docker-images.
+ 
+* Kernel-update des Hostsystems aktualisiert alle docker-images die ohne Betriebssystem sind.
 
 ---
 
@@ -124,3 +145,8 @@ Diese Präsentation wurde mithilfe von HTML5 in einem docker-container erstellt.
 * https://www.docker.com/
 * https://traefik.io/
 * https://kubernetes.io/
+
+---
+
+
+
