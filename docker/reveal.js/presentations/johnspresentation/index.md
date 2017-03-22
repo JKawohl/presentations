@@ -58,19 +58,24 @@ Verwaltung und Überwachung von Ressourcen:
 * user                     
 ---
 
-## Docker Container im Vergleich zu Virtuellen Maschinen 
-![container-vm-comparison](https://cloud.githubusercontent.com/assets/12275313/23125280/3fcb2ab0-f771-11e6-9d13-e2dd6fb55e0f.png)
----
-
 ## Warum Container?
 
 * Effiziente Ressourcen Nutzung
 
-* Schnell verfügbar 
-
 * Prozessisolierung
 
+
 ---
+
+## Docker Container im Vergleich zu Virtuellen Maschinen 
+![container-vm-comparison](https://cloud.githubusercontent.com/assets/12275313/23125280/3fcb2ab0-f771-11e6-9d13-e2dd6fb55e0f.png)
+---
+
+![meme](https://github.com/Kawohl/presentations/blob/master/docker/reveal.js/presentations/johnspresentation/wfmmeme.jpg?raw=true)
+
+
+---
+
 
 ## Warum Docker
 * open Source
@@ -87,6 +92,7 @@ Verwaltung und Überwachung von Ressourcen:
 
 
 ---
+
 
 #### docker Ökosystem 
 ![overview](https://raw.githubusercontent.com/Kawohl/presentations/20b535b991dc08c91a03c9b5bed33b43d3ecd4be/docker/reveal.js/presentations/johnspresentation/dockerUsers.png)
@@ -115,26 +121,41 @@ docker pull ubuntu:16.04
 
 ---
 
+## Nutzungsszenarien: 
+
+* Entwicklungsumgebung
+ 
+* Effektive Nutzung von Ressourcen
+
+* Deployment on Demand: Lastspitzen abfangen 
+
+* Portabilität: Migrationen sind einfach
+
+---
+
+# Ausblick:
+
+* Große Verbreitung 
+* Immer mehr tools zur Vereinfachung des Setups
+* "Enterprise" Container
+* Scalierung 
+* Deployment on Demand
 
 
-## Docker 
-
-* Entwicklungsumgebung 
-* Deployment on Demand: Lastpitzen abfangen 
-* Effektivere Nutzung von Ressourcen
-* 
 
 ---
 
 ## Zusammenfassung
 
-* Portabel: Jede app läuft auf jedem Docker-Host
+* relativ "Einfaches" Interface
 
 * "wfm": "Bei mir läuft das aber" ist kein Problem mehr.
 
 * Datenpersistenz durch mountpoints auf dem Dateisystem
  
-* Kernel-update des Hostsystems aktualisiert alle docker-images die ohne Betriebssystem sind.
+* Effektive Ressourcennutzung und Verwaltung
+
+* In der cloud quasi unendlich skalierbar  
 
 ---
 
