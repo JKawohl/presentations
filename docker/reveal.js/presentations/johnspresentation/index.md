@@ -6,18 +6,25 @@ Build, run, ship,  any app,  anywhere. ![docker-logo](https://raw.githubusercont
 ## Überblick
 
 * Was sind eigentlich Linux Container?
+
 * Linux Container im Vergleich zu VM´s
-* Docker architektur
-* Wie Docker meinen Arbeitsalltag erleichtert
-* Deployment der Zukunft ?
+
+* Anwendungsszenarien 
+
+* Die Zukunft? 
 ---
 
 ## Linux Container 
 
 * Virtualisierung mit einem Kernel
+
 * Prozesse durch Namespaces getrennt
+
 * Komplette isolation vom Host möglich
-* Beispiele für Linux Container: docker, LXC, rkt 
+
+* Beispiele für Linux Container: docker, LXC, LXD, rkt
+
+* Alle Libs und Abhängikeiten in einem "Paket" 
 ---
 
 ## Control Groups (Cgroups)
@@ -26,19 +33,25 @@ Verwaltung und Überwachung von Ressourcen:
 
 **Beispiele:**
 * Ram
+
 * CPU
+
 * Netzwerk
-* Device Node: Access Control
+
+* I/O Festplatte 
 ---
 ## Namespace 
 
-
-
 **Beispiele:**
+
 * Verwaltung der Sichtbarkeit von Prozessen:
+
 * pid
+
 * net
+
 * mnt
+
 * user                     
 ---
 
@@ -46,19 +59,34 @@ Verwaltung und Überwachung von Ressourcen:
 ![container-vm-comparison](https://cloud.githubusercontent.com/assets/12275313/23125280/3fcb2ab0-f771-11e6-9d13-e2dd6fb55e0f.png)
 ---
 
-## Werkzeug der Zukunft?
-* Portabel
-* Wenig Overhead
-* Bereits integriert in ansible, salt-stack und anderen orchestrierungssuiten 
+## Warum Container?
+
+* Effiziente Ressourcen Nutzung
+
+* Schnell verfügbar (dazu später mehr....)
+
+* Prozessisolierung
+
 ---
 
 ## Warum Docker
+
 * Industriestandard 
+
 * Fertige container auf dockerhub
+
 * Sehr einfaches interface design
+
 * Orchestrierungs Tools: Kubernetes, Swarm, docker-compose
+
 * integriert in Google Cloud Platform, Amazon Web Services, azure container-services u.v.m. 
 ---
+
+## Unvollständiger Überblick über das docker Ökosystem 
+
+
+---
+
 
 ## Docker in meinem Arbeitsalltag
 

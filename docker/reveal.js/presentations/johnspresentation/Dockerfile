@@ -1,0 +1,50 @@
+FROM owncloud/ubuntu:latest
+MAINTAINER Jonathan Kawohl <jonathan@jonaka.de>
+
+VOLUME ["/mnt/data"]
+
+EXPOSE 80
+EXPOSE 443
+
+ENTRYPOINT ["/usr/local/bin/entrypoint"]
+CMD ["/usr/local/bin/owncloud"]
+
+RUN apt-get update -y && \
+  apt-get upgrade -y && \
+  apt-get install -y \
+    apache2 \
+    libapache2-mod-php \
+    php-gd \
+    php-json \
+    php-mysql \
+    php-sqlite3 \
+    php-pgsql \
+    php-curl \
+    php-intl \
+    php-mcrypt \
+    php-imagick \
+    php-zip \
+    php-xml \
+    php-mbstring \
+    php-soap \
+    php-ldap \
+    php-apcu \
+    php-redis \
+    smbclient \
+    php-smbclient \
+    mysql-client \
+    postgresql-client \
+    sqlite \
+    gettext-base && \
+  apt-get clean && \
+  rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /etc/apache2/sites-available/default-ssl.conf && \
+  a2enmod rewrite headers env dir mime ssl expires && \
+  mkdir -p /var/www/reveal /mnt/data/files /mnt/data/config /mnt/data/certs /mnt/data/sessions && \
+  chown -R www-data:www-data /var/www/reveal /mnt/data && \
+  chsh -s /bin/bash www-data
+
+RUN curl -sS https://getcomposer.org/installer \
+  | php -- --install-dir=/usr/bin --filename=composer
+
+COPY rootfs /
+WORKDIR /var/www/reveal
