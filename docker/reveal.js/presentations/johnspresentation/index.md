@@ -22,7 +22,7 @@ Build, run, ship,  any app,  anywhere. ![docker-logo](https://raw.githubusercont
 
 * Prozesse durch Namespaces getrennt
 
-* Komplette isolation vom Host möglich
+* Komplette isolation voneinander und vom Host möglich
 
 * Beispiele für Linux Container: docker, LXC, LXD, rkt
 
@@ -78,9 +78,6 @@ Verwaltung und Überwachung von Ressourcen:
 
 
 ## Warum Docker
-* open Source
-
-* Sehr einfaches interface design  
 
 * Erweitert Linux Container u.a. um Portabilität
 
@@ -89,6 +86,11 @@ Verwaltung und Überwachung von Ressourcen:
 * Vielzahl an tools und implementierungen 
 
 * integriert in Google Cloud Platform, Amazon Web Services, azure container-services u.v.m. 
+
+* Sehr einfaches interface design 
+
+* open Source
+
 
 
 ---
@@ -159,13 +161,24 @@ docker pull ubuntu:16.04
 
 ---
 
-##Nützliches
-Diese Präsentation wurde mithilfe von HTML5 in einem docker-container erstellt.
+Den Sourcecode zu dieser Präsentation gibt es hier: 
+https://github.com/Kawohl/presentations
 
-* https://github.com/Kawohl/presentations
+Das docker image: 
+```
+docker pull jonaka/dockerpres
+```
+---
+
+
+######Links:
+
 * https://www.docker.com/
 * https://traefik.io/
 * https://kubernetes.io/
+* https://twitter.com/JonathanKawohl
+* https://github.com/Kawohl/
+
 
 ---
 
